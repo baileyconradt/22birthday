@@ -1,5 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import {Button} from 'react-bootstrap';
+import {confettiCannon, sideConfetti} from './confetti.js'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+sideConfetti()
 
 function App() {
   return (
@@ -9,6 +14,7 @@ function App() {
         <p>
          Shake it off!
         </p>
+        <Button variant="danger" onClick={confettiCannon}>Press For Confetti</Button>
       </header>
     </div>
   );
