@@ -1,3 +1,4 @@
+import './App.css';
 import { useState } from "react"
 import { Modal, Button, Form } from "react-bootstrap"
 import firebase from 'firebase'
@@ -29,7 +30,6 @@ export function CreateMessage(props) {
     const [messageRef, setMessageRef] = useState(undefined);
     return (<>
         <Button onClick={e => setShow(true)}>Create Message</Button>
-        <Button onClick={e => props.setLink('test')}>Print message</Button>
         <Modal show={show} onHide={e => setShow(false)}>
             <Modal.Header closeButton>
                 <Modal.Title>Create Message</Modal.Title>
@@ -41,7 +41,7 @@ export function CreateMessage(props) {
                         <Form.Label>Message</Form.Label>
                         <Form.Control as="textarea" rows="3" required placeholder="Type your birthday message here!"></Form.Control>
                         <Form.Control.Feedback type="invalid">
-                            Type your birthday message here!
+                            Type a birthday message here!
             </Form.Control.Feedback>
                     </Form.Group>
 
