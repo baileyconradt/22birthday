@@ -36,7 +36,7 @@ function confettiCannon() {
     });
 }
 
-var end = Date.now() + (15 * 1000);
+var end = Date.now() + (5 * 1000);
 
 var colors = ['#bb0000', '#ffffff'];
 
