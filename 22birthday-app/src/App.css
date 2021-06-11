@@ -85,3 +85,19 @@ p{
   }
 
 }
+
+/*bottom right button for privacy policy and about*/
+#infobutton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+}
+
+a,
+a label {
+    cursor: pointer;
+}
+
+#info-paragraph{
+  font-size:100%
+}

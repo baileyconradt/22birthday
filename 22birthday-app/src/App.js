@@ -3,9 +3,13 @@ import { useState } from "react"
 import { Button, Jumbotron, Container, Row, Col, InputGroup, FormControl } from 'react-bootstrap';
 import { confettiCannon, sideConfetti } from './confetti.js';
 import { CreateMessage } from './CreateMessage.js';
+import { GetInfo } from './GetInfo.js';
 import { firestore } from './firebaseStuff';
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 sideConfetti()
 
@@ -77,7 +81,7 @@ function App() {
 
           <Container fluid>
             <Row>
-              <Col className='m-2'><a target="_blank" href='https://baileyconradt.com'><div className="iframeContainer"><img className="responsive-iframe" src='https://media.giphy.com/media/6KeFLNtxBAfoA/giphy.gif' /></div></a></Col>
+              <Col className='m-2'><div className="iframeContainer"><img className="responsive-iframe" src='https://media.giphy.com/media/6KeFLNtxBAfoA/giphy.gif' /></div></Col>
             </Row>
             <Row>
               <Col><Jumbotron className='m-5'>
@@ -106,11 +110,9 @@ function App() {
 
               </Jumbotron></Col>
             </Row>
-
-
-
             {/* <Button variant="danger" onClick={confettiCannon}>Press For Confetti</Button> */}
           </Container>
+          <GetInfo/>
         </header>
       </div>
     );
